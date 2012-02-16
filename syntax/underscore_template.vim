@@ -6,6 +6,9 @@
 " Version:	2
 " Last Change:  2011 Jul 3
 
+" depending on your file extension, you can add this to your vimrc:
+" au BufNewFile,BufRead *.jst set syntax=jst
+
 " Read the HTML syntax to start with
 runtime! syntax/html.vim
 unlet b:current_syntax
