@@ -8,8 +8,6 @@ set rtp+=~/bovim/Vundle.vim/
 call vundle#begin('~/bovim/bundle/')
 Plugin 'gmarik/Vundle.vim'
 
-
-Plugin 'numbers.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'mattn/emmet-vim'
