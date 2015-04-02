@@ -23,7 +23,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 
-NeoBundle 'numbers.vim'
+"
+"NeoBundle 'numbers.vim'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'bling/vim-airline'
@@ -61,7 +62,6 @@ NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'ervandew/supertab'
-NeoBundle 'mileszs/ack.vim'
 NeoBundle 'itspriddle/ZoomWin'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'scrooloose/syntastic'
@@ -69,6 +69,7 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'thoughtbot/vim-rspec'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'mileszs/ack.vim'
 
 call neobundle#end()
 
@@ -232,6 +233,7 @@ if has("gui_running")
   set guioptions-=r
   set guioptions-=b
   set showtabline=0
+  set guifont=Monaco\ for\ Powerline:h14,Inconsolata\ for\ Powerline:h14,Consolas:h12
 end
 
 """
