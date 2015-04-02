@@ -75,14 +75,14 @@ imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
 nnoremap <leader>f :normal! gg=G``<CR>
 
 " cd to the directory containing the file in the buffer
-nmap <silent> <leader>cd :lcd %:h<CR>
+"nmap <silent> <leader>cd :lcd %:h<CR>
 
 " Some helpers to edit mode
 " http://vimcasts.org/e/14
-nmap <leader>ew :e <C-R>=expand('%:h').'/'<cr>
-nmap <leader>es :sp <C-R>=expand('%:h').'/'<cr>
-nmap <leader>ev :vsp <C-R>=expand('%:h').'/'<cr>
-nmap <leader>et :tabe <C-R>=expand('%:h').'/'<cr>
+"nmap <leader>ew :e <C-R>=expand('%:h').'/'<cr>
+"nmap <leader>es :sp <C-R>=expand('%:h').'/'<cr>
+"nmap <leader>ev :vsp <C-R>=expand('%:h').'/'<cr>
+"nmap <leader>et :tabe <C-R>=expand('%:h').'/'<cr>
 
 " Toggle hlsearch with <leader>hs
 nmap <leader>hs :set hlsearch! hlsearch?<CR>
@@ -102,7 +102,7 @@ nmap <leader>gs :Gstatus<CR>
 nmap <leader>gd :Gdiff<CR>
 nmap <leader>gl :Glog<CR>
 nmap <leader>gc :Gcommit<CR>
-nmap <leader>gp :Git push<CR>
+nmap <leader>gp :Dispatch git push<CR>
 
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '\.rbc$', '\.rbo$', '\.class$', '\.o$', '\~$']
 map <silent> <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
