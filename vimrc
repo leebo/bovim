@@ -165,8 +165,8 @@ set clipboard=unnamed " Share system clipboard.
 "set fileencodings=utf8,cp936,gb18030,big5
 set cursorline                  " Highlight current line
 
-set splitright                  " Puts new vsplit windows to the right of the current
-set splitbelow                  " Puts new split windows to the bottom of the current
+"set splitright                  " Puts new vsplit windows to the right of the current
+"set splitbelow                  " Puts new split windows to the bottom of the current
 
 ""
 "" Whitespace
