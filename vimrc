@@ -53,6 +53,7 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'rking/ag.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -100,9 +101,9 @@ let g:ctrlp_custom_ignore = {
 
 nmap <leader>gs :Gstatus<CR>
 nmap <leader>gd :Gdiff<CR>
-nmap <leader>gl :Glog<CR>
 nmap <leader>gc :Gcommit<CR>
-nmap <leader>gp :Dispatch git push<CR>
+nmap <leader>gp :Gpush<CR>
+nmap <leader>gl :Dispatch git pull<CR>
 
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '\.rbc$', '\.rbo$', '\.class$', '\.o$', '\~$']
 map <silent> <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
