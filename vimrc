@@ -1,84 +1,63 @@
 let mapleader = ','
-au BufRead,BufNewFile {*.json.jbuilder,Gemfile,Rakefile,Vagrantfile,Thorfile,Procfile,Guardfile,config.ru,*.rake} set ft=ruby
-" Note: Skip initialization for vim-tiny or vim-small.
-if !1 | finish | endif
 
-if has('vim_starting')
-  if &compatible
-    set nocompatible               " Be iMproved
-  endif
+set nocompatible               " Be iMproved
 
-  " Required:
-  set runtimepath+=~/bovim/bundle/neobundle.vim/
-endif
+filetype off
 
-" Required:
-call neobundle#begin(expand('~/bovim/bundle/'))
+set rtp+=~/bovim/Vundle.vim/
+call vundle#begin('~/bovim/bundle/')
+Plugin 'gmarik/Vundle.vim'
 
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
 
-" My Bundles here:
-" Refer to |:NeoBundle-examples|.
-" Note: You don't set neobundle setting in .gvimrc!
+Plugin 'numbers.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'mattn/emmet-vim'
+Plugin 'bling/vim-airline'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'vim-scripts/molokai'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ap/vim-css-color'
+Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-rails'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'pangloss/vim-javascript'
+Plugin 'elzr/vim-json'
+Plugin 'groenewege/vim-less'
+Plugin 'sunaku/vim-ruby-minitest'
+Plugin 'mmalecki/vim-node.js'
+Plugin 'depuracao/vim-rdoc'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'slim-template/vim-slim'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'edsono/vim-matchit'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'ervandew/supertab'
+Plugin 'itspriddle/ZoomWin'
+Plugin 'scrooloose/syntastic'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
-"
-"NeoBundle 'numbers.vim'
-NeoBundle 'Raimondi/delimitMate'
-NeoBundle 'mattn/emmet-vim'
-NeoBundle 'bling/vim-airline'
-NeoBundle 'bronson/vim-trailing-whitespace'
-NeoBundle 'vim-scripts/molokai'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'ap/vim-css-color'
-NeoBundle 'tpope/vim-dispatch'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-repeat'
-NeoBundle 'tpope/vim-unimpaired'
-NeoBundle 'tpope/vim-cucumber'
-NeoBundle 'tpope/vim-git'
-NeoBundle 'tpope/vim-haml'
-NeoBundle 'tpope/vim-markdown'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'elzr/vim-json'
-NeoBundle 'groenewege/vim-less'
-NeoBundle 'sunaku/vim-ruby-minitest'
-NeoBundle 'mmalecki/vim-node.js'
-NeoBundle 'depuracao/vim-rdoc'
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'slim-template/vim-slim'
-NeoBundle 'cakebaker/scss-syntax.vim'
-NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'edsono/vim-matchit'
-NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'MarcWeber/vim-addon-mw-utils'
-NeoBundle 'tomtom/tlib_vim'
-NeoBundle 'garbas/vim-snipmate'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'ervandew/supertab'
-NeoBundle 'itspriddle/ZoomWin'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'thoughtbot/vim-rspec'
-NeoBundle 'digitaltoad/vim-jade'
-NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'mileszs/ack.vim'
-
-call neobundle#end()
-
-" Required:
+call vundle#end()
 filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
 
 set t_Co=256
 set mouse=a
@@ -88,6 +67,7 @@ nmap zz ZZ
 imap jj <Esc>
 nmap <Space> :
 
+au BufRead,BufNewFile {*.json.jbuilder,Gemfile,Rakefile,Vagrantfile,Thorfile,Procfile,Guardfile,config.ru,*.rake} set ft=ruby
 
 " Toggle paste mode
 nmap <silent> <F4> :set invpaste<CR>:set paste?<CR>
@@ -191,8 +171,6 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 
-filetype plugin on
-filetype indent on
 
 " Display tabs and trailing spaces visually
 set list listchars=tab:»\ ,trail:·
