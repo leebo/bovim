@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-if [  -d "~/.vim/" ]; then
+if [ ! -d "~/.vim/" ]; then
   rm -Rf ~/.vim.old
   mv ~/.vim ~/.vim.old
 fi
