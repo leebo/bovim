@@ -54,6 +54,7 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'rking/ag.vim'
+Plugin 'edkolev/tmuxline.vim'
 
 call vundle#end()
 filetype plugin indent on
