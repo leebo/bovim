@@ -225,7 +225,7 @@ if has("win32")
   source $VIMRUNTIME/menu.vim
   set guifont=Monaco\ for\ Powerline:h14,Inconsolata\ for\ Powerline:h14,Consolas:h12
   "set guifont=Monaco\ for\ Powerline:h14,Ubuntu\ Mono\ derivative\ Powerline:h13,Consolas:h12
-  set gfw=YouYuan:h11,Microsoft_Yahei:h11
+  set gfw=YouYuan:h14,Microsoft_Yahei:h14
 end
 
 let g:airline_powerline_fonts=1
