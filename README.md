@@ -70,3 +70,10 @@ Plugin 'nathanaelkane/vim-indent-guides'
 ```
 
 4. 自定义快捷键
+* leader键映射: ,
+* 保存退出: zz
+* 打开NERDTree: ,n
+* git status:  ,gs
+* git push:   ,gp
+* git pull:   ,gl
+* git commit:   ,gc
