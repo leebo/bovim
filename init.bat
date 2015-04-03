@@ -1,3 +1,3 @@
 git submodule update
-del /q ~/_vimrc
-mklink ~/_vrimc ~/bovim/vimrc
+del /q %HOMEPATH%\_vimrc
+mklink %HOMEPATH%\_vimrc %HOMEPATH%\bovim\vimrc
