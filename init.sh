@@ -1,11 +1,10 @@
-#!/usr/bin/env sh
-
-if [ ! -d "~/.vim/" ]; then
-  rm -Rf ~/.vim.old
-  mv ~/.vim ~/.vim.old
-fi
-
-if [ ! -f "~/.vimrc" ]; then
+#!/bin/bash
+git submodule init
+git submodule update
+cd ~
+if [ ! -f ".vimrc" ]; then
+  echo "not have .vimrc"
+else
   rm ~/.vimrc.old
   mv ~/.vimrc ~/.vimrc.old
 fi

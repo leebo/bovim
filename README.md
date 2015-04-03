@@ -5,11 +5,19 @@
 
 
 2. 安装方式
+  * Linux && OSX
 ```sh
 cd ~
 git clone https://github.com/leebo/bovim.git
 cd bovim && ./init.sh
 ```
+  * windows
+```sh
+cd %HOMEPATH%
+git clone https://github.com/leebo/bovim.git
+cd bovim && ./init.bat
+```
+
 3. 插件说明
 * 下面是所有使用的插件，感谢插件的作者
 ```viml
@@ -62,3 +70,10 @@ Plugin 'nathanaelkane/vim-indent-guides'
 ```
 
 4. 自定义快捷键
+* leader键映射: ,
+* 保存退出: zz
+* 打开NERDTree: ,n
+* git status:  ,gs
+* git push:   ,gp
+* git pull:   ,gl
+* git commit:   ,gc

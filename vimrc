@@ -6,9 +6,8 @@ filetype off
 
 set rtp+=~/bovim/Vundle.vim/
 call vundle#begin('~/bovim/bundle/')
-Plugin 'gmarik/Vundle.vim'
+"Plugin 'gmarik/Vundle.vim'
 
-Plugin 'mileszs/ack.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'mattn/emmet-vim'
 Plugin 'bling/vim-airline'
@@ -55,6 +54,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'rking/ag.vim'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'othree/html5.vim'
+Plugin 'othree/html5-syntax.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -226,7 +227,7 @@ if has("win32")
   source $VIMRUNTIME/menu.vim
   set guifont=Monaco\ for\ Powerline:h14,Inconsolata\ for\ Powerline:h14,Consolas:h12
   "set guifont=Monaco\ for\ Powerline:h14,Ubuntu\ Mono\ derivative\ Powerline:h13,Consolas:h12
-  set gfw=YouYuan:h11,Microsoft_Yahei:h11
+  set gfw=YouYuan:h12,Microsoft_Yahei:h12
 end
 
 let g:airline_powerline_fonts=1
