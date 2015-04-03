@@ -6,7 +6,7 @@ filetype off
 
 set rtp+=~/bovim/Vundle.vim/
 call vundle#begin('~/bovim/bundle/')
-Plugin 'gmarik/Vundle.vim'
+"Plugin 'gmarik/Vundle.vim'
 
 Plugin 'mileszs/ack.vim'
 Plugin 'Raimondi/delimitMate'
