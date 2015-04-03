@@ -5,11 +5,19 @@
 
 
 2. 安装方式
+  * Linux && OSX
 ```sh
 cd ~
 git clone https://github.com/leebo/bovim.git
 cd bovim && ./init.sh
 ```
+  * windows
+```sh
+cd %HOMEPATH%
+git clone https://github.com/leebo/bovim.git
+cd bovim && ./init.bat
+```
+
 3. 插件说明
 * 下面是所有使用的插件，感谢插件的作者
 ```viml
