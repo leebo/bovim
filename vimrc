@@ -1,5 +1,5 @@
 let mapleader = ','
-
+autocmd BufWritePost .vimrc source $MYVIMRC
 set nocompatible               " Be iMproved
 
 filetype off
@@ -50,7 +50,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'digitaltoad/vim-jade'
-Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'rking/ag.vim'
 Plugin 'edkolev/tmuxline.vim'
@@ -109,7 +108,6 @@ nmap <leader>gl :Dispatch git pull<CR>
 
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '\.rbc$', '\.rbo$', '\.class$', '\.o$', '\~$']
 map <silent> <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_enable_signs = 1
@@ -119,11 +117,13 @@ let g:syntastic_check_on_wq = 0
 
 
 " RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+map <Leader>tt :call RunCurrentSpecFile()<CR>
+map <Leader>ts :call RunNearestSpec()<CR>
+map <Leader>tl :call RunLastSpec()<CR>
+map <Leader>ta :call RunAllSpecs()<CR>
 let g:rspec_command = "Dispatch rspec {spec}"
+
+map <leader>e :e $MYVIMRC<CR>
 
 
 ""
@@ -246,7 +246,3 @@ let g:airline_mode_map = {
       \ }
 set fillchars=vert:\│
 set fileformat=unix
-
-set ts=2 sw=2 et
-let g:indent_guides_start_level =2
-let g:indent_guides_guide_size =1
