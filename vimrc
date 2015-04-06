@@ -212,7 +212,7 @@ if has("gui_running")
   set guioptions-=r
   set guioptions-=b
   set showtabline=0
-  set guifont=Monaco\ for\ Powerline:h14,Inconsolata\ for\ Powerline:h14,Consolas:h12
+  set guifont=Monaco\ for\ Powerline:h12,Inconsolata\ for\ Powerline:h14,Consolas:h12
 end
 
 """
