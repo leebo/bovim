@@ -1,5 +1,4 @@
 let mapleader = ','
-autocmd BufWritePost .vimrc source $MYVIMRC
 set nocompatible               " Be iMproved
 
 filetype off
@@ -88,6 +87,8 @@ nnoremap <leader>f :normal! gg=G``<CR>
 
 " Toggle hlsearch with <leader>hs
 nmap <leader>hs :set hlsearch! hlsearch?<CR>
+nmap <leader>bi :Dispatch bundle install<CR>
+nmap <leader>q :ccl<CR>
 
 ""
 ""Plugin Mapping
@@ -109,11 +110,11 @@ nmap <leader>gl :Dispatch git pull<CR>
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '\.rbc$', '\.rbo$', '\.class$', '\.o$', '\~$']
 map <silent> <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 
-let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_enable_signs = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
 
 
 " RSpec.vim mappings
@@ -123,7 +124,9 @@ map <Leader>tl :call RunLastSpec()<CR>
 map <Leader>ta :call RunAllSpecs()<CR>
 let g:rspec_command = "Dispatch rspec {spec}"
 
-map <leader>e :e $MYVIMRC<CR>
+nmap <leader>e :e $MYVIMRC<CR>
+nmap <leader>so :so $MYVIMRC<CR>
+nmap <leader>w :w<CR>
 
 
 ""
@@ -228,6 +231,7 @@ if has("win32")
   set guifont=Monaco\ for\ Powerline:h14,Inconsolata\ for\ Powerline:h14,Consolas:h12
   "set guifont=Monaco\ for\ Powerline:h14,Ubuntu\ Mono\ derivative\ Powerline:h13,Consolas:h12
   set gfw=YouYuan:h12,Microsoft_Yahei:h12
+  set fileformat=unix
 end
 
 let g:airline_powerline_fonts=1
@@ -244,5 +248,3 @@ let g:airline_mode_map = {
       \ 's'  : 'S',
       \ 'S'  : 'S',
       \ }
-set fillchars=vert:\│
-set fileformat=unix
