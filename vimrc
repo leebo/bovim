@@ -1,6 +1,7 @@
 let mapleader = ','
 set nocompatible               " Be iMproved
 
+let NERDTreeHijackNetrw = 0
 filetype off
 
 set rtp+=~/bovim/Vundle.vim/
