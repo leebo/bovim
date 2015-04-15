@@ -54,6 +54,7 @@ Plugin 'rking/ag.vim'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'othree/html5.vim'
 Plugin 'othree/html5-syntax.vim'
+Plugin 'suan/vim-instant-markdown'
 
 call vundle#end()
 filetype plugin indent on
