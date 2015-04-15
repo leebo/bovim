@@ -5,7 +5,7 @@ filetype off
 
 set rtp+=~/bovim/Vundle.vim/
 call vundle#begin('~/bovim/bundle/')
-"Plugin 'gmarik/Vundle.vim'
+"and Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Raimondi/delimitMate'
 Plugin 'mattn/emmet-vim'
@@ -111,8 +111,8 @@ let NERDTreeIgnore=['\.pyc$', '\.pyo$', '\.rbc$', '\.rbo$', '\.class$', '\.o$', 
 map <silent> <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 
 let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_enable_signs = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_enable_signs = 0
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 
