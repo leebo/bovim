@@ -7,12 +7,14 @@
   ![](http://s1.momo.moda/2015/04/16/217eedd1ba8c592db97d0dbe54c7adfc.png)
 2. **安装方式**
     * Linux && OSX
+
       ```
       cd ~
       git clone https://github.com/leebo/bovim.git
       cd bovim && ./init.sh
       ```
     * windows
+
       ```
       cd %HOMEPATH%
       git clone https://github.com/leebo/bovim.git
@@ -20,6 +22,7 @@
       init.bat
       ```
     * 安装完成后进入vim执行PluginInstall安装依赖的插件
+
       ```
       :PluginInstall
       ```
