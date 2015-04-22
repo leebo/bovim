@@ -56,6 +56,8 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'othree/html5.vim'
 Plugin 'othree/html5-syntax.vim'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'aaronj1335/underscore-templates.vim'
 
 call vundle#end()
 filetype plugin indent on
