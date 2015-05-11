@@ -79,6 +79,9 @@
     Plugin 'othree/html5.vim'
     Plugin 'othree/html5-syntax.vim'
     Plugin 'suan/vim-instant-markdown'
+    Plugin 'othree/javascript-libraries-syntax.vim'
+    Plugin 'aaronj1335/underscore-templates.vim'
+    Plugin 'bonsaiben/bootstrap-snippets'
     ```
 4. **自定义快捷键**
     * leader键映射: `,`
