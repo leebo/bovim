@@ -1,3 +1,4 @@
+set shell=/bin/sh
 let mapleader = ','
 set nocompatible               " Be iMproved
 
@@ -250,3 +251,4 @@ let g:airline_mode_map = {
       \ 's'  : 'S',
       \ 'S'  : 'S',
       \ }
+set diffopt+=vertical
