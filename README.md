@@ -26,6 +26,12 @@
       ```
       :PluginInstall
       ```
+    * 字体安装
+
+      windows和linux可以拷贝font目录下的字体到windows/font下安装字体
+
+      mac os使用默认的monaco字体
+
 3. **插件说明**
 
     下面是所有使用的插件，感谢所有制作插件的作者.
