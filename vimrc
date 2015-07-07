@@ -60,6 +60,7 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'aaronj1335/underscore-templates.vim'
 Plugin 'bonsaiben/bootstrap-snippets'
+Plugin 'easymotion/vim-easymotion'
 
 call vundle#end()
 filetype plugin indent on
@@ -94,7 +95,7 @@ nnoremap <leader>f :normal! gg=G``<CR>
 " Toggle hlsearch with <leader>hs
 nmap <leader>hs :set hlsearch! hlsearch?<CR>
 nmap <leader>bi :Dispatch bundle install<CR>
-nmap <leader>q :ccl<CR>
+nmap <leader>q :wq<CR>
 
 ""
 ""Plugin Mapping
