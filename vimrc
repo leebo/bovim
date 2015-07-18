@@ -1,6 +1,9 @@
 set shell=/bin/sh
 let mapleader = ','
 set nocompatible               " Be iMproved
+"set noimdisable
+"autocmd! InsertLeave * set imdisable|set iminsert=1
+"autocmd! InsertEnter * set noimdisable|set iminsert=1
 
 let NERDTreeHijackNetrw = 0
 filetype off
