@@ -57,8 +57,8 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'rking/ag.vim'
 Plugin 'edkolev/tmuxline.vim'
-Plugin 'othree/html5.vim'
-Plugin 'othree/html5-syntax.vim'
+"Plugin 'othree/html5.vim'
+"Plugin 'othree/html5-syntax.vim'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'aaronj1335/underscore-templates.vim'
@@ -225,7 +225,8 @@ if has("gui_running")
   set guioptions-=r
   set guioptions-=b
   set showtabline=0
-  set guifont=Monaco\ for\ Powerline:h12,Inconsolata\ for\ Powerline:h14,Consolas:h12
+  set guifont=Monaco\ for\ Powerline:h16,Inconsolata\ for\ Powerline:h14,Consolas:h14
+  set shell=/bin/zsh
 end
 
 """
@@ -240,7 +241,7 @@ if has("win32")
   source $VIMRUNTIME/menu.vim
   set guifont=Monaco\ for\ Powerline:h14,Inconsolata\ for\ Powerline:h14,Consolas:h12
   "set guifont=Monaco\ for\ Powerline:h14,Ubuntu\ Mono\ derivative\ Powerline:h13,Consolas:h12
-  set gfw=YouYuan:h12,Microsoft_Yahei:h12
+  set gfw=YouYuan:h14,Microsoft_Yahei:h14
   set fileformat=unix
 end
 
