@@ -10,3 +10,4 @@ else
 fi
 
 ln -s ~/bovim/vimrc ~/.vimrc
+ln -s ~/bovim/snippets ~/.vim/
