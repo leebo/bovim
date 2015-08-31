@@ -64,6 +64,8 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'aaronj1335/underscore-templates.vim'
 Plugin 'bonsaiben/bootstrap-snippets'
 Plugin 'easymotion/vim-easymotion'
+" vuejs vue file
+Plugin 'darthmall/vim-vue'
 
 call vundle#end()
 filetype plugin indent on
