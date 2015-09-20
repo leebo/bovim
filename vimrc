@@ -75,7 +75,6 @@ set mouse=a
 set laststatus=2
 color molokai
 nmap zz ZZ
-imap jj <Esc>
 nmap <Space> :
 
 au BufRead,BufNewFile {*.json.jbuilder,Gemfile,Rakefile,Vagrantfile,Thorfile,Procfile,Guardfile,config.ru,*.rake} set ft=ruby

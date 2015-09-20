@@ -11,3 +11,7 @@ fi
 
 ln -s ~/bovim/vimrc ~/.vimrc
 ln -s ~/bovim/snippets ~/.vim/
+
+# nvim config
+ln -s ~/bovim/vimrc ~/.nvimrc
+ln -s ~/bovim/snippets ~/.nvim/
