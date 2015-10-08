@@ -32,6 +32,7 @@ Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-rails'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'pangloss/vim-javascript'
+Plugin 'briancollins/vim-jst'
 Plugin 'elzr/vim-json'
 Plugin 'groenewege/vim-less'
 Plugin 'sunaku/vim-ruby-minitest'
@@ -39,7 +40,6 @@ Plugin 'mmalecki/vim-node.js'
 Plugin 'depuracao/vim-rdoc'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'slim-template/vim-slim'
-Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'edsono/vim-matchit'
 Plugin 'scrooloose/nerdcommenter'
@@ -57,8 +57,6 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'rking/ag.vim'
 Plugin 'edkolev/tmuxline.vim'
-"Plugin 'othree/html5.vim'
-"Plugin 'othree/html5-syntax.vim'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'aaronj1335/underscore-templates.vim'
@@ -261,3 +259,5 @@ let g:airline_mode_map = {
       \ 'S'  : 'S',
       \ }
 set diffopt+=vertical
+" scss and sass slow open and save
+let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss'] }
