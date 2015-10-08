@@ -92,6 +92,7 @@
 4. **自定义快捷键**
     * leader键映射: `,`
     * 保存退出: `zz`
+    * 保存退出: `,a`
     * 进入命令模式   `<space>`
     * 打开NERDTree: `,n`
     * git status:  `,gs`
@@ -102,6 +103,7 @@
     * source vimrc:  `,so`
     * 编辑vimrc:  `,e`
     * 切换ZoonWin:  `,,`
+    * Ag搜索:  `,a`
 
 5. 一些系统工具
     * [the_sliver_searcher](https://github.com/ggreer/the_silver_searcher)

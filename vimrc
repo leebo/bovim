@@ -104,6 +104,9 @@ nmap <leader>q :wq<CR>
 ""
 map <leader><leader> :ZoomWin<CR>
 
+" ag.vim
+nmap <silent> <Leader>a :Ag<Space>
+
 "let g:ctrlp_map = ''
 let g:ctrlp_custom_ignore = {
       \ 'dir':  '\v[\/]\.(git|hg|svn)$',
