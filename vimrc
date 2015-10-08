@@ -106,6 +106,13 @@ map <leader><leader> :ZoomWin<CR>
 
 " ag.vim
 nmap <silent> <Leader>a :Ag<Space>
+nmap Y y$
+
+" Easy window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 "let g:ctrlp_map = ''
 let g:ctrlp_custom_ignore = {
