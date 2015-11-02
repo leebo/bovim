@@ -106,6 +106,7 @@
     * Ag搜索:  `,a`
 
 5. 一些系统工具
+    * [fcitx-remote OS X](https://github.com/CodeFalling/fcitx-remote-for-osx)
     * [the_sliver_searcher](https://github.com/ggreer/the_silver_searcher)
     * [vim-instant-markdown](https://github.com/suan/vim-instant-markdown)
     * [tmux](http://tmux.sourceforge.net)

@@ -64,6 +64,8 @@ Plugin 'bonsaiben/bootstrap-snippets'
 Plugin 'easymotion/vim-easymotion'
 " vuejs vue file
 Plugin 'darthmall/vim-vue'
+" 增加fcitx 输入法支持
+Plugin 'CodeFalling/fcitx-vim-osx'
 
 call vundle#end()
 filetype plugin indent on
@@ -109,10 +111,10 @@ nmap <silent> <Leader>a :Ag<Space>
 nmap Y y$
 
 " Easy window navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+map <C-b>h <C-w>h
+map <C-b>j <C-w>j
+map <C-b>k <C-w>k
+map <C-b>l <C-w>l
 
 "let g:ctrlp_map = ''
 let g:ctrlp_custom_ignore = {
@@ -156,7 +158,6 @@ set number            " Show line numbers
 set numberwidth=5
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
-set encoding=utf8
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
@@ -271,3 +272,13 @@ let g:airline_mode_map = {
 set diffopt+=vertical
 " scss and sass slow open and save
 let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss'] }
+
+if has('nvim')
+  :tnoremap <C-b> <C-\><C-n>
+  :tnoremap <C-w>h <C-\><C-n><C-w>h
+  :tnoremap <C-w>j <C-\><C-n><C-w>j
+  :tnoremap <C-w>k <C-\><C-n><C-w>k
+  :tnoremap <C-w>l <C-\><C-n><C-w>l
+else
+  set encoding=utf8
+end
