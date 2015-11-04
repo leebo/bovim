@@ -106,8 +106,8 @@ nmap <leader>q :wq<CR>
 ""
 map <leader><leader> :ZoomWin<CR>
 
-" ag.vim
-nmap <silent> <Leader>a :Ag<Space>
+" rails.vim rspec jump
+nmap <Leader>a :A<CR>
 nmap Y y$
 
 " Easy window navigation

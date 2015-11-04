@@ -103,7 +103,7 @@
     * source vimrc:  `,so`
     * 编辑vimrc:  `,e`
     * 切换ZoonWin:  `,,`
-    * Ag搜索:  `,a`
+    * rails.vim Rspec跳转:  `,a`
 
 5. 一些系统工具
     * [fcitx-remote OS X](https://github.com/CodeFalling/fcitx-remote-for-osx)
