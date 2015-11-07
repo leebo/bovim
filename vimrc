@@ -249,7 +249,7 @@ if has("win32")
   let $LANG= 'en'
   source $VIMRUNTIME/delmenu.vim
   source $VIMRUNTIME/menu.vim
-  set guifont=Monaco\ for\ Powerline:h14,Inconsolata\ for\ Powerline:h14,Consolas:h12
+  set guifont=Monaco\ for\ Powerline:h16,Inconsolata\ for\ Powerline:h14,Consolas:h12
   "set guifont=Monaco\ for\ Powerline:h14,Ubuntu\ Mono\ derivative\ Powerline:h13,Consolas:h12
   set gfw=YouYuan:h14,Microsoft_Yahei:h14
   set fileformat=unix
@@ -274,11 +274,12 @@ set diffopt+=vertical
 let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss'] }
 
 if has('nvim')
-  :tnoremap <C-b> <C-\><C-n>
-  :tnoremap <C-w>h <C-\><C-n><C-w>h
-  :tnoremap <C-w>j <C-\><C-n><C-w>j
-  :tnoremap <C-w>k <C-\><C-n><C-w>k
-  :tnoremap <C-w>l <C-\><C-n><C-w>l
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <C-b> <C-\><C-n>
+  tnoremap <C-w>h <C-\><C-n><C-w>h
+  tnoremap <C-w>j <C-\><C-n><C-w>j
+  tnoremap <C-w>k <C-\><C-n><C-w>k
+  tnoremap <C-w>l <C-\><C-n><C-w>l
 else
   set encoding=utf8
 end
