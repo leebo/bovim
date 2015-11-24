@@ -13,5 +13,6 @@ ln -s ~/bovim/vimrc ~/.vimrc
 ln -s ~/bovim/snippets ~/.vim/
 
 # nvim config
-ln -s ~/bovim/vimrc ~/.nvimrc
-ln -s ~/bovim/snippets ~/.nvim/
+mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
+ln -s ~/.vim $XDG_CONFIG_HOME/nvim
+ln -s ~/.vimrc $XDG_CONFIG_HOME/nvim/init.vim
