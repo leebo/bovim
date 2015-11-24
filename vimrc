@@ -82,11 +82,6 @@ nmap gj gJ
 " tcomment_vim
 map <leader>c<space> gcc<esc>
 
- "none X terminal
-"let g:indentLine_color_tty_light = 7  (default: 4)
-"let g:indentLine_color_dark = 1  (default: 2)
-
-
 au BufRead,BufNewFile {*.json.jbuilder,Gemfile,Rakefile,Vagrantfile,Thorfile,Procfile,Guardfile,config.ru,*.rake} set ft=ruby
 
 " Toggle paste mode
