@@ -42,7 +42,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'slim-template/vim-slim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'edsono/vim-matchit'
-Plugin 'scrooloose/nerdcommenter'
+"Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
@@ -61,6 +61,7 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'tomtom/tcomment_vim'
 " vuejs vue file
 Plugin 'darthmall/vim-vue'
 
@@ -78,6 +79,8 @@ let g:indentLine_color_term = 239
 " splitjoin
 nmap gs gS
 nmap gj gJ
+" tcomment_vim
+map <leader>c<space> gcc<esc>
 
  "none X terminal
 "let g:indentLine_color_tty_light = 7  (default: 4)
