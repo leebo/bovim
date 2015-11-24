@@ -59,13 +59,10 @@ Plugin 'rking/ag.vim'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'aaronj1335/underscore-templates.vim'
-Plugin 'bonsaiben/bootstrap-snippets'
-Plugin 'easymotion/vim-easymotion'
+Plugin 'Yggdroot/indentLine'
+Plugin 'AndrewRadev/splitjoin.vim'
 " vuejs vue file
 Plugin 'darthmall/vim-vue'
-" 增加fcitx 输入法支持
-Plugin 'CodeFalling/fcitx-vim-osx'
 
 call vundle#end()
 filetype plugin indent on
@@ -76,6 +73,16 @@ set laststatus=2
 color molokai
 nmap zz ZZ
 nmap <Space> :
+"Vim indentLine
+let g:indentLine_color_term = 239
+" splitjoin
+nmap gs gS
+nmap gj gJ
+
+ "none X terminal
+"let g:indentLine_color_tty_light = 7  (default: 4)
+"let g:indentLine_color_dark = 1  (default: 2)
+
 
 au BufRead,BufNewFile {*.json.jbuilder,Gemfile,Rakefile,Vagrantfile,Thorfile,Procfile,Guardfile,config.ru,*.rake} set ft=ruby
 
