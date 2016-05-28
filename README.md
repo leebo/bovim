@@ -1,7 +1,6 @@
 # Bobo的vim 配置
----
-#### 此配置是使用了很多年janus的配置包后使用并总结下来的配置
-#### 此配置主要是针对ruby web开发
+#### 此配置是使用多年janus的配置后总结下来的配置
+#### 此配置主要是针对linux && mac 下ruby web开发
 1. **截图展示**
   ![](http://s1.momo.moda/2015/04/16/1c1d4df596d01da60385f0bb17a4a9e0.png)
   ![](http://s1.momo.moda/2015/04/16/217eedd1ba8c592db97d0dbe54c7adfc.png)
