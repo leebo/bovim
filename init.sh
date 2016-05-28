@@ -1,16 +1,14 @@
 #!/bin/bash
-git submodule init
-git submodule update
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 cd ~
 if [ ! -f ".vimrc" ]; then
   echo "not have .vimrc"
 else
-  rm ~/.vimrc.old
-  mv ~/.vimrc ~/.vimrc.old
+  mv -f ~/.vimrc ~/.vimrc.old
 fi
 
 ln -s ~/bovim/vimrc ~/.vimrc
-ln -s ~/bovim/snippets ~/.vim/
 
 # nvim config
 mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
