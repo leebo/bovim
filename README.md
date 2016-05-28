@@ -103,6 +103,7 @@ Plug 'darthmall/vim-vue'
     * rails.vim Rspec跳转:  `,a`
 
 5. 自定义代码片段
+
   bovim目录下的snippets 文件夹可以根据文件名添加自定义的snippets 可根据rails.snippets文件进行增加修改
 
 5. 一些系统工具
