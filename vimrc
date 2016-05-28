@@ -41,7 +41,6 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'slim-template/vim-slim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'edsono/vim-matchit'
-"Plugin 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
@@ -261,7 +260,7 @@ end
 
 let g:airline_powerline_fonts=1
 let g:airline_theme = 'powerlineish'
-
+"
 let g:airline_mode_map = {
       \ '__' : '-',
       \ 'n'  : 'N',
@@ -287,3 +286,7 @@ if has('nvim')
 else
   set encoding=utf8
 end
+
+" Enables HTML/CSS syntax highlighting in your JavaScript file.
+let g:javascript_enable_domhtmlcss = 1
+let g:javascript_ignore_javaScriptdoc = 1
