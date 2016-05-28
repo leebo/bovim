@@ -9,6 +9,7 @@ else
 fi
 
 ln -s ~/bovim/vimrc ~/.vimrc
+ln -s ~/bovim/snippets ~/.vim/snippets
 
 # nvim config
 mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
