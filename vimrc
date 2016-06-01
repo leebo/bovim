@@ -8,65 +8,62 @@ set nocompatible               " Be iMproved
 let NERDTreeHijackNetrw = 0
 filetype off
 
-set rtp+=~/bovim/Vundle.vim/
-call vundle#begin('~/bovim/bundle/')
-"and Plugin 'gmarik/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
-Plugin 'Raimondi/delimitMate'
-Plugin 'mattn/emmet-vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'vim-scripts/molokai'
-Plugin 'kien/ctrlp.vim'
-Plugin 'ap/vim-css-color'
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'tpope/vim-cucumber'
-Plugin 'tpope/vim-git'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-markdown'
-Plugin 'tpope/vim-rails'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'pangloss/vim-javascript'
-Plugin 'briancollins/vim-jst'
-" Plugin 'elzr/vim-json'
-Plugin 'groenewege/vim-less'
-Plugin 'sunaku/vim-ruby-minitest'
-Plugin 'mmalecki/vim-node.js'
-Plugin 'depuracao/vim-rdoc'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'slim-template/vim-slim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'edsono/vim-matchit'
-"Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'ervandew/supertab'
-Plugin 'itspriddle/ZoomWin'
-Plugin 'scrooloose/syntastic'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'rking/ag.vim'
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'suan/vim-instant-markdown'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'Yggdroot/indentLine'
-Plugin 'AndrewRadev/splitjoin.vim'
-Plugin 'tomtom/tcomment_vim'
+Plug 'Raimondi/delimitMate'
+Plug 'mattn/emmet-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'vim-scripts/molokai'
+Plug 'kien/ctrlp.vim'
+Plug 'ap/vim-css-color'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-cucumber'
+Plug 'tpope/vim-git'
+Plug 'tpope/vim-haml'
+Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-rails'
+Plug 'kchmck/vim-coffee-script'
+Plug 'pangloss/vim-javascript'
+Plug 'briancollins/vim-jst'
+Plug 'elzr/vim-json'
+Plug 'groenewege/vim-less'
+Plug 'sunaku/vim-ruby-minitest'
+Plug 'mmalecki/vim-node.js'
+Plug 'depuracao/vim-rdoc'
+Plug 'vim-ruby/vim-ruby'
+Plug 'slim-template/vim-slim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'edsono/vim-matchit'
+Plug 'scrooloose/nerdtree'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+Plug 'ervandew/supertab'
+Plug 'itspriddle/ZoomWin'
+Plug 'scrooloose/syntastic'
+Plug 'airblade/vim-gitgutter'
+Plug 'thoughtbot/vim-rspec'
+Plug 'digitaltoad/vim-jade'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'rking/ag.vim'
+Plug 'edkolev/tmuxline.vim'
+Plug 'suan/vim-instant-markdown'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'tomtom/tcomment_vim'
 " vuejs vue file
-Plugin 'darthmall/vim-vue'
+Plug 'darthmall/vim-vue'
+call plug#end()
 
-call vundle#end()
 filetype plugin indent on
 
 set t_Co=256
@@ -263,7 +260,7 @@ end
 
 let g:airline_powerline_fonts=1
 let g:airline_theme = 'powerlineish'
-
+"
 let g:airline_mode_map = {
       \ '__' : '-',
       \ 'n'  : 'N',
@@ -289,3 +286,7 @@ if has('nvim')
 else
   set encoding=utf8
 end
+
+" Enables HTML/CSS syntax highlighting in your JavaScript file.
+let g:javascript_enable_domhtmlcss = 1
+let g:javascript_ignore_javaScriptdoc = 1

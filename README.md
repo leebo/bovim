@@ -1,7 +1,6 @@
 # Bobo的vim 配置
----
-#### 此配置是使用了很多年janus的配置包后使用并总结下来的配置
-#### 此配置主要是针对ruby web开发
+#### 此配置是使用多年janus的配置后总结下来的配置
+#### 此配置主要是针对linux && mac 下ruby web开发
 1. **截图展示**
   ![](http://s1.momo.moda/2015/04/16/1c1d4df596d01da60385f0bb17a4a9e0.png)
   ![](http://s1.momo.moda/2015/04/16/217eedd1ba8c592db97d0dbe54c7adfc.png)
@@ -13,14 +12,7 @@
       git clone https://github.com/leebo/bovim.git
       cd bovim && ./init.sh
       ```
-    * windows
 
-      ```
-      cd %HOMEPATH%
-      git clone https://github.com/leebo/bovim.git
-      cd bovim
-      init.bat
-      ```
     * 安装完成后进入vim执行PluginInstall安装依赖的插件
 
       ```
@@ -28,7 +20,7 @@
       ```
     * 字体安装
 
-      windows和linux可以拷贝font目录下的字体到windows/font下安装字体
+      安装font目录下的字体
 
       mac os使用默认的monaco字体
 
@@ -38,56 +30,59 @@
     特别感谢[janus](https://github.com/carlhuda/janus)作者 其中很多配置参数参考janus
 
     ```viml
-Plugin 'Raimondi/delimitMate'
-Plugin 'mattn/emmet-vim'
-Plugin 'bling/vim-airline'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'vim-scripts/molokai'
-Plugin 'kien/ctrlp.vim'
-Plugin 'ap/vim-css-color'
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'tpope/vim-cucumber'
-Plugin 'tpope/vim-git'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-markdown'
-Plugin 'tpope/vim-rails'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'pangloss/vim-javascript'
-Plugin 'briancollins/vim-jst'
-Plugin 'elzr/vim-json'
-Plugin 'groenewege/vim-less'
-Plugin 'sunaku/vim-ruby-minitest'
-Plugin 'mmalecki/vim-node.js'
-Plugin 'depuracao/vim-rdoc'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'slim-template/vim-slim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'edsono/vim-matchit'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'ervandew/supertab'
-Plugin 'itspriddle/ZoomWin'
-Plugin 'scrooloose/syntastic'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'rking/ag.vim'
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'suan/vim-instant-markdown'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'Yggdroot/indentLine'
-Plugin 'AndrewRadev/splitjoin.vim'
-Plugin 'darthmall/vim-vue'
+Plug 'Raimondi/delimitMate'
+Plug 'mattn/emmet-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'vim-scripts/molokai'
+Plug 'kien/ctrlp.vim'
+Plug 'ap/vim-css-color'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-cucumber'
+Plug 'tpope/vim-git'
+Plug 'tpope/vim-haml'
+Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-rails'
+Plug 'kchmck/vim-coffee-script'
+Plug 'pangloss/vim-javascript'
+Plug 'briancollins/vim-jst'
+Plug 'elzr/vim-json'
+Plug 'groenewege/vim-less'
+Plug 'sunaku/vim-ruby-minitest'
+Plug 'mmalecki/vim-node.js'
+Plug 'depuracao/vim-rdoc'
+Plug 'vim-ruby/vim-ruby'
+Plug 'slim-template/vim-slim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'edsono/vim-matchit'
+"Plugin 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+Plug 'ervandew/supertab'
+Plug 'itspriddle/ZoomWin'
+Plug 'scrooloose/syntastic'
+Plug 'airblade/vim-gitgutter'
+Plug 'thoughtbot/vim-rspec'
+Plug 'digitaltoad/vim-jade'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'rking/ag.vim'
+Plug 'edkolev/tmuxline.vim'
+Plug 'suan/vim-instant-markdown'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'tomtom/tcomment_vim'
+" vuejs vue file
+Plug 'darthmall/vim-vue'
     ```
 
 4. **自定义快捷键**
@@ -106,6 +101,10 @@ Plugin 'darthmall/vim-vue'
     * 编辑vimrc:  `,e`
     * 切换ZoonWin:  `,,`
     * rails.vim Rspec跳转:  `,a`
+
+5. 自定义代码片段
+
+  bovim目录下的snippets 文件夹可以根据文件名添加自定义的snippets 可根据rails.snippets文件进行增加修改
 
 5. 一些系统工具
     * [the_sliver_searcher](https://github.com/ggreer/the_silver_searcher)
