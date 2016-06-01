@@ -14,7 +14,8 @@ call vundle#begin('~/bovim/bundle/')
 
 Plugin 'Raimondi/delimitMate'
 Plugin 'mattn/emmet-vim'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-scripts/molokai'
 Plugin 'kien/ctrlp.vim'
@@ -33,7 +34,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'pangloss/vim-javascript'
 Plugin 'briancollins/vim-jst'
-Plugin 'elzr/vim-json'
+" Plugin 'elzr/vim-json'
 Plugin 'groenewege/vim-less'
 Plugin 'sunaku/vim-ruby-minitest'
 Plugin 'mmalecki/vim-node.js'
@@ -254,7 +255,7 @@ if has("win32")
   let $LANG= 'en'
   source $VIMRUNTIME/delmenu.vim
   source $VIMRUNTIME/menu.vim
-  set guifont=Monaco\ for\ Powerline:h16,Inconsolata\ for\ Powerline:h14,Consolas:h12
+  set guifont=Monaco\ for\ Powerline:h16,Inconsolata\ for\ Powerline:h12,Consolas:h12
   "set guifont=Monaco\ for\ Powerline:h14,Ubuntu\ Mono\ derivative\ Powerline:h13,Consolas:h12
   set gfw=YouYuan:h14,Microsoft_Yahei:h14
   set fileformat=unix
