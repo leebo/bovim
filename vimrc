@@ -287,6 +287,8 @@ else
   set encoding=utf8
 end
 
+let g:rspec_command = 'Dispatch bin/rspec {spec}'
+
 " Enables HTML/CSS syntax highlighting in your JavaScript file.
 let g:javascript_enable_domhtmlcss = 1
 let g:javascript_ignore_javaScriptdoc = 1
