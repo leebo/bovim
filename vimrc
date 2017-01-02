@@ -40,7 +40,7 @@ Plug 'depuracao/vim-rdoc'
 Plug 'vim-ruby/vim-ruby'
 Plug 'slim-template/vim-slim'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'edsono/vim-matchit'
+Plug 'tmhedberg/matchit'
 Plug 'scrooloose/nerdtree'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
@@ -48,7 +48,7 @@ Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'ervandew/supertab'
 Plug 'itspriddle/ZoomWin'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 Plug 'airblade/vim-gitgutter'
 Plug 'thoughtbot/vim-rspec'
 Plug 'digitaltoad/vim-jade'
@@ -60,6 +60,7 @@ Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'tomtom/tcomment_vim'
+Plug 'w0rp/ale'
 " vuejs vue file
 Plug 'darthmall/vim-vue'
 call plug#end()
@@ -134,11 +135,21 @@ nmap <leader>gl :Dispatch git pull<CR>
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '\.rbc$', '\.rbo$', '\.class$', '\.o$', '\~$']
 map <silent> <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 
-let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_enable_signs = 0
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
+" let g:syntastic_enable_signs = 1
+" let g:syntastic_always_populate_loc_list = 0
+" let g:syntastic_auto_loc_list = 0
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_ruby_checkers = [ 'mri']
+" scss and sass slow open and save
+" let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss'] }
+
+
+let g:ale_sign_column_always = 1
+let g:ale_sign_warning = '--'
+let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 
 " RSpec.vim mappings
@@ -273,8 +284,6 @@ let g:airline_mode_map = {
       \ 'S'  : 'S',
       \ }
 set diffopt+=vertical
-" scss and sass slow open and save
-let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss'] }
 
 if has('nvim')
   tnoremap <Esc> <C-\><C-n>
@@ -288,6 +297,7 @@ else
 end
 
 let g:rspec_command = 'Dispatch bin/rspec {spec}'
+
 
 " Enables HTML/CSS syntax highlighting in your JavaScript file.
 let g:javascript_enable_domhtmlcss = 1
