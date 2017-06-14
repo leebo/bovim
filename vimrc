@@ -32,7 +32,6 @@ Plug 'tpope/vim-rails'
 Plug 'kchmck/vim-coffee-script'
 Plug 'pangloss/vim-javascript'
 Plug 'briancollins/vim-jst'
-Plug 'elzr/vim-json'
 Plug 'groenewege/vim-less'
 Plug 'sunaku/vim-ruby-minitest'
 Plug 'mmalecki/vim-node.js'
@@ -66,6 +65,8 @@ Plug 'darthmall/vim-vue'
 call plug#end()
 
 filetype plugin indent on
+set synmaxcol=128
+syntax sync minlines=256
 
 set t_Co=256
 set mouse=a
