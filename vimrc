@@ -26,18 +26,13 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-cucumber'
 Plug 'tpope/vim-git'
-Plug 'tpope/vim-haml'
-Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-rails'
 Plug 'kchmck/vim-coffee-script'
 Plug 'pangloss/vim-javascript'
 Plug 'briancollins/vim-jst'
 Plug 'groenewege/vim-less'
-Plug 'sunaku/vim-ruby-minitest'
 Plug 'mmalecki/vim-node.js'
-Plug 'depuracao/vim-rdoc'
 Plug 'vim-ruby/vim-ruby'
-Plug 'slim-template/vim-slim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tmhedberg/matchit'
 Plug 'scrooloose/nerdtree'
@@ -46,16 +41,11 @@ Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'ervandew/supertab'
-Plug 'itspriddle/ZoomWin'
 " Plug 'scrooloose/syntastic'
 Plug 'airblade/vim-gitgutter'
 Plug 'thoughtbot/vim-rspec'
-Plug 'digitaltoad/vim-jade'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'rking/ag.vim'
-Plug 'edkolev/tmuxline.vim'
-Plug 'suan/vim-instant-markdown'
-Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'tomtom/tcomment_vim'
@@ -65,8 +55,6 @@ Plug 'darthmall/vim-vue'
 call plug#end()
 
 filetype plugin indent on
-set synmaxcol=128
-syntax sync minlines=256
 
 set t_Co=256
 set mouse=a
@@ -109,7 +97,6 @@ nmap <leader>q :wq<CR>
 ""
 ""Plugin Mapping
 ""
-map <leader><leader> :ZoomWin<CR>
 
 " rails.vim rspec jump
 nmap <Leader>a :A<CR>
@@ -160,11 +147,6 @@ map <Leader>tl :call RunLastSpec()<CR>
 map <Leader>ta :call RunAllSpecs()<CR>
 let g:rspec_command = "Dispatch rspec {spec}"
 
-nmap <leader>e :e $MYVIMRC<CR>
-nmap <leader>so :so $MYVIMRC<CR>
-nmap <leader>w :w<CR>
-
-
 ""
 "" Basic Setup
 ""
@@ -183,7 +165,6 @@ set autoread                    "Reload files changed outside vim
 "set hidden        " Allow un-saved buffers in background
 set clipboard=unnamed " Share system clipboard.
 "set fileencodings=utf8,cp936,gb18030,big5
-set cursorline                  " Highlight current line
 
 "set splitright                  " Puts new vsplit windows to the right of the current
 "set splitbelow                  " Puts new split windows to the bottom of the current
@@ -296,9 +277,6 @@ if has('nvim')
 else
   set encoding=utf8
 end
-
-let g:rspec_command = 'Dispatch bin/rspec {spec}'
-
 
 " Enables HTML/CSS syntax highlighting in your JavaScript file.
 let g:javascript_enable_domhtmlcss = 1
